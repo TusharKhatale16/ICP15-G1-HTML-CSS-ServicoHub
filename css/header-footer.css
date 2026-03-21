@@ -86,6 +86,8 @@ footer .btn-primary {
     display: flex;
   }
   .copyright{
+    display: flex;
+    justify-content: space-between;
 
   }
   .logo-decoration{
