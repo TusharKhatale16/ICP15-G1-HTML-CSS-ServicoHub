@@ -1,4 +1,3 @@
-
 .hero {
   padding: 40px 60px;
 }
@@ -78,7 +77,6 @@
   height: 30px;
 }
 
-/* MAP CARD */
 .map-card {
   background: #e9edf3;
   border-radius: 15px;
@@ -124,7 +122,6 @@
     text-decoration: none;
     color:white
 }
-/* Media query */
 @media (max-width: 900px) {
   .contact-wrapper {
     flex-direction: column;
@@ -137,7 +134,7 @@
 
 .faq {
   text-align: center;
-  padding: 40px;
+padding: 50px 10px;
 }
 
 .chips span {
@@ -148,33 +145,75 @@
   margin: 10px;
 }
 
+.faq-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #174ea6;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
+.subtitle {
+    color: #a0aec0;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.faq-box {
+    padding: 25px;
+    margin: 5px 5px 10px 70px;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid black
+    transition: 0.3s ease;
+    background-color: #eee;
+}
+.faq-box:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.faq-box h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.faq-box p {
+    color: black;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .faq-box {
+        padding: 20px;
+    }
+}
 
 @media (max-width: 992px) {
   .contact-container {
     flex-direction: column;
   }
 
-  .footer-container {
-    flex-wrap: wrap;
-  }
-
+ 
   .hero h1 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 600px) {
-  .navbar {
-    padding: 15px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-  }
 
   .hero {
     padding: 20px;
@@ -196,11 +235,4 @@
     flex-direction: column;
   }
 
-  footer {
-    padding: 20px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-  }
 }
