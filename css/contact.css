@@ -148,7 +148,7 @@ padding: 50px 10px;
 .faq-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1e4ed8;
+    background-color: #174ea6;
     display: flex;
     justify-content: center;
 }
@@ -186,7 +186,7 @@ h1 {
 }
 
 .faq-box p {
-    color: #1e4ed8;
+    color: black;
     line-height: 1.6;
     font-size: 13px;
 }
