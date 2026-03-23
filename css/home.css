@@ -44,8 +44,8 @@ padding:40px;
 /* Card Design */
 .card{
 background:white;
-width: 100%; 
-padding:100px;
+width: 80%; 
+padding: 20px;
 text-align:center;
 border-radius:10px;
 box-shadow:0 0 10px gray;
@@ -56,7 +56,7 @@ display: flex;
 }
 
 .card img{
-width:100%;
+width:80%;
 border-radius:10px;
 }
 
@@ -105,4 +105,52 @@ border-radius: 30px;
    font-size: 20px;
    font-weight: 600;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.work-section-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.work-section-heading{
+   font-size: 40px;
+   font-weight: 700;
+}
+.work-section-description{
+   margin-top: 10px;
+   font-weight: 700;
+}
+.work-section-card-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   gap: 30px;
+   margin-top: 30px;
+   margin-right: 100px;
+   margin-left: 100px;
+}
+.work-card-heading{
+   font-size: 20px;
+   font-weight: 700;
+}
+.work-section-card-container-items{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   background-color:white;
+   padding: 20px;
+   border-radius: 10px;
+   height: 200px;
+   width: 200px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.work-section-card-container-items:hover{
+   border: 1px solid #E6501B;
+   transition: border 0.6s ease;
+
 }
