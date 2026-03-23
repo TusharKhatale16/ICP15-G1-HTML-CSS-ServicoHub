@@ -1,60 +1,3 @@
-body{
-   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-.hero {
-    height: 500px;
-    width: auto;
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 60px;
-    background-color: #0052b0;
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.hero-content {
-    padding: 40px;
-    max-width: 600px;
-}
-
-.hero-content h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.hero-content h1 span {
-    color: #a3c7ff;
-}
-
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.hero-badges {
-    margin-bottom: 20px;
-}
-
-.badge {
-    display: inline-block;
-    background: white;
-    color: #0052b0;
-    padding: 8px 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-}
 
 .primary-btn {
     padding: 10px 20px;
@@ -141,54 +84,9 @@ body{
 .service-btn:hover {
     background-color: #0052b0;
 }
-.cta {
-    margin: 30px;
-    height: 300px;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.cta-content {
-    text-align: center;
-    max-width: 700px;
-    padding: 20px;
-}
 
-.cta-title {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #003f87;
-}
-
-.cta-text {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.cta-primary {
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #003f87;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.cta-secondary {
-    padding: 10px 20px;
-    background-color: white;
-    color: #003f87;
-    border: 1px solid #003f87;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-@/* ================= MOBILE (up to 768px) ================= */
+@/* MOBILE (up to 768px) */
 @media (max-width: 768px) {
 
   .hero {
@@ -258,13 +156,15 @@ body{
   }
 
   .cta-buttons {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     gap: 10px;
   }
 
   .cta-primary,
   .cta-secondary {
     width: 100%;
+    
   }
 }
 
@@ -420,5 +320,180 @@ These are required for media queries to work properly:
 /* CTA buttons */
 .cta-buttons {
   display: flex;
+    justify-content: center;
   gap: 15px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.badges span {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.services-section {
+  padding: 40px 20px;
+}
+
+.services-section h2 {
+  font-size: 28px;
+}
+
+.sub-text {
+  margin: 10px 0 30px;
+  color: gray;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: gray;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #1565c0;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cta {
+  background: #e9edf3;
+  margin: 30px 20px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.cta h2 {
+  font-size: 28px;
+}
+
+.cta p {
+  margin: 15px auto;
+  max-width: 600px;
+  color: gray;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.primary {
+  background: #1565c0;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: white;
+  padding: 12px 25px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/*  MOBILE (max 600px)
+ */
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 25px;
+  }
+}
+
+/* TABLET (601px - 992px)
+*/
+@media (min-width: 601px) and (max-width: 992px) {
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* LAPTOP (993px+)*/
+@media (min-width: 993px) {
+
+  .services {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
