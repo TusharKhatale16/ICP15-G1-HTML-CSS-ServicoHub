@@ -177,63 +177,150 @@ input, select, textarea {
     font-style: italic;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .booking-container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-    }
-}
+/* ================= MOBILE (up to 768px) ================= */
+@media (max-width: 768px) {
 
-/*tablet*/
-@media (max-width: 1024px) {
-    .hero {
-        padding: 40px;
-        text-align: center;
-    }
-    
-    .hero p {
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+  .hero {
+    padding: 40px 15px;
+    text-align: center;
+  }
 
-    .booking-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        max-width: 650px;
-    }
-}
+  .hero-inner h1 {
+    font-size: 24px;
+  }
 
-.booking-sidebar {
-    flex: 1;
+  .hero-inner p {
+    font-size: 14px;
+  }
+
+  .main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
+  }
+
+  .booking-container,
+  .booking-container1 {
+    width: 100%;
+  }
+
+  .booking-form {
+    padding: 15px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .booking-sidebar {
+    margin-top: 10px;
+  }
+
+  .sidebar-card {
+    padding: 15px;
+  }
+
+  .guarantee-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .price-list li {
+    font-size: 14px;
+  }
 }
 
-/*  mobile  */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
 
-    .booking-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        padding: 20px;
-    }
+/* ================= TABLET (769px to 1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
 
-    .form-row {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .booking-container,
+  .booking-container1 {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .form-group {
+    flex: 1;
+    min-width: 45%;
+  }
+
+  .hero-inner h1 {
+    font-size: 28px;
+  }
+
+  .hero-inner p {
+    font-size: 15px;
+  }
+
+  .sidebar-card {
+    padding: 20px;
+  }
+
+  .guarantee-item {
+    gap: 15px;
+  }
 }
 
 
+/* ================= LAPTOP (1025px to 1280px) ================= */
+@media (min-width: 1025px) and (max-width: 1280px) {
 
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+  }
 
+  .booking-container {
+    width: 65%;
+  }
 
-    
+  .booking-container1 {
+    width: 35%;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-group {
+    flex: 1;
+  }
+
+  .hero-inner h1 {
+    font-size: 32px;
+  }
+
+  .hero-inner p {
+    font-size: 16px;
+  }
+}

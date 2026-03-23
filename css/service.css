@@ -184,80 +184,237 @@
     cursor: pointer;
 }
 
+@/* ================= MOBILE (up to 768px) ================= */
 @media (max-width: 768px) {
 
-    /* Hero Section */
-    .hero {
-        height: auto;
-        margin: 20px;
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero {
+    padding: 40px 15px;
+    text-align: center;
+  }
 
-    .hero-content {
-        padding: 20px;
-    }
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
 
-    .hero-content h1 {
-        font-size: 28px;
-    }
+  .hero-content p {
+    font-size: 14px;
+  }
 
-    .hero-content p {
-        font-size: 14px;
-    }
+  .hero-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 
-    .badge {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    /* Services Section */
-    #services {
-        margin: 20px;
-    }
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
 
-    .services-title {
-        font-size: 26px;
-        text-align: center;
-    }
+  /* Services */
+  .service-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
 
-    .services-subtitle {
-        font-size: 14px;
-        text-align: center;
-    }
+  .service-image img {
+    width: 100%;
+    margin-top: 15px;
+  }
 
-    .services-row {
-        flex-direction: column;
-        align-items: center;
-    }
+  .service-text h3 {
+    font-size: 20px;
+  }
 
-    .service-card {
-        width: 90%;
-    }
+  .service-text p {
+    font-size: 14px;
+  }
 
-    /* CTA Section */
-    .cta {
-        height: auto;
-        margin: 20px;
-        padding: 30px 15px;
-        text-align: center;
-    }
+  /* CTA */
+  .cta {
+    padding: 30px 15px;
+    text-align: center;
+  }
 
-    .cta-title {
-        font-size: 24px;
-    }
+  .cta-title {
+    font-size: 22px;
+  }
 
-    .cta-text {
-        font-size: 14px;
-    }
+  .cta-text {
+    font-size: 14px;
+  }
 
-    .cta-primary,
-    .cta-secondary {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-    }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+  }
 }
-a{
-    text-decoration: none;
+
+
+/* ================= TABLET (769px to 1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero {
+    padding: 60px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+
+  /* Services */
+  .service-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .service-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .service-text h3 {
+    font-size: 22px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+
+  .cta-text {
+    font-size: 15px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+
+/* ================= LAPTOP (1025px to 1280px) ================= */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .hero {
+    padding: 80px 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-badges {
+    gap: 20px;
+  }
+
+  .hero-buttons {
+    gap: 20px;
+  }
+
+  /* Services */
+  .service-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* Alternate layout (image left/right) */
+  .service-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .service-image img {
+    width: 100%;
+  }
+
+  .service-text {
+    flex: 1;
+  }
+
+  .service-image {
+    flex: 1;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 60px 40px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+  }
+
+  .cta-text {
+    font-size: 16px;
+  }
+}
+⚡ Important Base CSS (Add This)
+
+These are required for media queries to work properly:
+
+/* Hero buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Badges */
+.hero-badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Service row */
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* CTA buttons */
+.cta-buttons {
+  display: flex;
+  gap: 15px;
 }
