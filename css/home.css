@@ -33,7 +33,7 @@ padding:60px;
 /* Services Section */
 .services{
 display:grid;
-grid-template-columns: repeat(2, 240px);
+grid-template-columns: repeat(2, 1fr);
 
 justify-content:center;
 gap:80px;
@@ -44,8 +44,8 @@ padding:40px;
 /* Card Design */
 .card{
 background:white;
-width:220px;
-padding:15px;
+width: 100%; 
+padding:100px;
 text-align:center;
 border-radius:10px;
 box-shadow:0 0 10px gray;
@@ -60,13 +60,18 @@ width:100%;
 border-radius:10px;
 }
 
+
 .card ul {
   padding-left: 18px;
   margin: 10px 0;
+  text-align: left;
 }
 
 .card button {
   margin-top: auto;
+  padding: 12px;
+  border-radius: 25px;
+  width: 90%; 
 }
 /* Button */
 button{
@@ -79,6 +84,25 @@ margin-top:10px;
 border-radius: 30px;
 }
 
-button:hover{
-background:;
+.recommedations{
+   margin-top: 30px;
+   color:black;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 20px;
+   margin-left: 100px;
+}
+.recommedations-items{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+.recommedations-count{
+   font-size: 20px;
+   font-weight: 600;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

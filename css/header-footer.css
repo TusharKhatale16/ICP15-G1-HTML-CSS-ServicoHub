@@ -63,7 +63,7 @@ footer {
 
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 5px;
 }
 
 footer input {
@@ -101,7 +101,7 @@ text-decoration: none;
   line-height: 1.7;
   }
 @media (max-width: 768px) {
-  .navbar {
+  .navbar nav {
     padding: 15px 30px;
     flex-direction: column;
     align-items: flex-start;
@@ -121,7 +121,8 @@ text-decoration: none;
 
   .btn-primary {
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 10px;
+    
   }
 }
 
@@ -152,17 +153,18 @@ text-decoration: none;
   }
 
   .navbar nav a {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    font-size: 14px;
+    padding: 15px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-primary {
+    width: 30%;
+    margin-top: 5px;
+  
+}
   }
 
-  .btn-primary {
-    width: 100%;
-    margin-top: 5px;
-  }
-}
+  
 
 
 /*LARGE LAPTOP (1024px and above) */
