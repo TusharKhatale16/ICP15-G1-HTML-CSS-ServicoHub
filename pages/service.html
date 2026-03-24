@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/booking.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="navbar">
@@ -27,26 +30,58 @@
  <a href="./../pages/signup.html"><button class="btn-primary">Sign Up</button></a>
   </nav>
 </header><br><br>
-    <div class="hero">
-        <div class="hero-content">           
-            <h1>
-                Elite Home Maintenance, 
-                <span id="main-text">Mastered.</span>
-            </h1>
-            <p>
-                Connect with trusted professionals for home services like electrical, plumbing, and AC repair.
-            </p>
-            <div class="hero-badges">
-                <div class="badge">✔ ISO Certified Pros</div>
-                <div class="badge">✔ Fixed Transparent Rates</div>
-                <div class="badge">✔ Fast Service</div>
-            </div>
-            <div class="hero-buttons">
-                <a class="primary-btn" href="../pages/booking.html">Book Now</a>
-                <a class="secondary-btn" href="#services">Learn More</a>
-            </div>
-        </div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Elite Home Maintenance,<br>Mastered.</h1>
+    <p>
+      Connect with the top 1% of certified professionals for specialized
+      residential care. Our white-glove service ensures your home remains
+      in peak architectural condition.
+    </p>
+
+    <div class="badges">
+      <span>ISO Certified Pros</span>
+      <span>Fixed Transparent Rates</span>
+      <span>60-Min Response Time</span>
     </div>
+  </div>
+</section>
+<section class="services-section">
+  <h2>Our Specialized Services</h2>
+  <p class="sub-text">Tailored solutions for every corner of your estate.</p>
+
+  <div class="services">
+
+    <div class="card">
+      <img src="./../images/electrician.png" alt="electrician">
+      <h3>Electrician</h3>
+      <p>Expert rewiring and smart home integrations with certified safety protocols.</p>
+     <a href="./../pages/booking.html"><button>Book Service</button></a> 
+    </div>
+
+    <div class="card">
+      <img src="./../images/plumbing.png" alt="">
+      <h3>Plumbing</h3>
+      <p>Leak detection, fixture upgrades, and luxury bathroom maintenance.</p>
+      <a href="./../pages/booking.html"><button>Book Service</button></a> 
+    </div>
+
+    <div class="card">
+      <img src="./../images/ac-repair.png" alt="">
+      <h3>AC Specialist</h3>
+      <p>HVAC diagnostics and seasonal deep-cleaning for optimal performance.</p>
+      <a href="./../pages/booking.html"><button>Book Service</button></a> 
+    </div>
+
+    <div class="card">
+      <img src="./../images/carpentry.png" alt="">
+      <h3>Carpentry</h3>
+      <p>Bespoke woodwork, furniture repair, and installations.</p>
+      <a href="./../pages/booking.html"><button>Book Service</button></a> 
+    </div>
+
+  </div>
+</section>
 
     <div id="services">
     <h2 class="services-title">Our Services</h2>
@@ -57,7 +92,7 @@
             <p>
                 We provide safe and reliable electrical services including wiring, switch installation,
                 fault detection, and appliance setup. Our experts ensure your home stays powered
-                with complete safety and efficiency.
+                with complete safety and efficiency.Expert rewiring and smart home integrations with certified safety protocols.
             </p>
             <a href="../pages/booking.html" class="service-btn">Book Now</a>
         </div>
@@ -70,7 +105,7 @@
             <h3>Plumbing</h3>
             <p>
                 From leak repairs to pipe installation and bathroom fittings, our plumbing services
-                are fast and dependable. We solve water issues efficiently to keep your home running smoothly.
+                are fast and dependable. We solve water issues efficiently to keep your home running smoothly.Leak detection, fixture upgrades, and luxury bathroom maintenance.
             </p>
             <a href="../pages/booking.html" class="service-btn">Book Now</a>
         </div>
@@ -83,7 +118,7 @@
             <h3>AC Repair</h3>
             <p>
                 Stay cool with our professional AC services including installation, gas refilling,
-                cleaning, and maintenance. We ensure your air conditioning system performs at its best.
+                cleaning, and maintenance. We ensure your air conditioning system performs at its best.HVAC diagnostics and seasonal deep-cleaning for optimal performance.
             </p>
             <a href="../pages/booking.html" class="service-btn">Book Now</a>
         </div>
@@ -96,7 +131,7 @@
             <h3>Carpenter</h3>
             <p>
                 Our skilled carpenters handle furniture repair, custom woodwork, door fittings,
-                and modular installations. We deliver quality craftsmanship with attention to detail.
+                and modular installations. We deliver quality craftsmanship with attention to detail.Bespoke woodwork, furniture repair, and installations.</p>
             </p>
             <a href="../pages/booking.html" class="service-btn">Book Now</a>
         </div>
@@ -106,22 +141,19 @@
     </div>
 </div>
 
-    <div class="cta">
-    <div class="cta-content">
-        <h2 class="cta-title">
-            Tailored Solutions for Your Property
-        </h2>
-        <p class="cta-text">
-            Don't see exactly what you need? We handle complex home maintenance and customized service requests.
-        </p>
-        <div class="cta-buttons">
-            <a class="cta-primary" href="tel:7744006306">Talk to Expert</a>
-            <a class="cta-secondary" href="#">Browse Services</a>
-        </div>
-    </div>
-</div>
+    <section class="cta">
+  <h2>Tailored Solutions for Your Property</h2>
+  <p>
+    Don’t see exactly what you need? Our concierge service handles complex
+    projects and high-value maintenance contracts.
+  </p>
 
-    <footer><hr>
+  <div class="cta-buttons">
+    <button class="primary">Talk to an Expert</button>
+    <button class="secondary">Browse All Services</button>
+  </div>
+</section>
+   <footer>
   <div class="footer-container">
     <div class="footer-brand">
       <div class="logo">
@@ -133,14 +165,14 @@
       </p><br>
       <p><a href="http://www.instagram.com/harsh_pohane23" target="_blank" class="text-color"><img src="./../images/instagram.png" height="20px"/>
         </a>  &nbsp; 
-       <a href="https://github.com/HarshPohane" class="text-color"><img src="./../images/github.png" height="20px"/> </a></p>
+       <a href="https://wa.me/+7744006306" class="text-color"><img src="./../images/icons8-whatsapp-50.png" height="20px"/> </a></p>
 
     </div>
 
     <div>
       <h4>Quick Links</h4><br>
       <p><a href="./../index.html" class="text-color">Home</a></p><br>
-      <p><a href="./../pages/service.html" class="active-open">Services</a></p><br>
+      <p><a href="./../pages/service.html" class="text-color">Services</a></p><br>
       <p><a href="./../pages/booking.html" class="text-color">Booking</a></p><br>
       <p><a href="./../pages/about.html" class="text-color">About</a></p><br>
       <p><a href="./../pages/contact.html" class="text-color">Contact</a></p><br>
@@ -156,13 +188,12 @@
   <div >
         <h2>Contact</h2><br>
         <div class="footer-contact">
-        <p><a href="mailto:harshpohane4@gmail.com" class="text-color"> <img src="./../images/contactmail.jpg" height="20px"/>&nbsp;harshpohane4@gmail.com</a> </p></div><br>
+        <p><a href="mailto:harshpohane4@gmail.com" class="text-color"> <img src="./../images/icons8-email-50.png" height="20px"/>&nbsp;&nbsp;harshpohane4@gmail.com</a> </p></div><br>
         <div class="footer-contact">
-          <p><a href="tel:7744006306" class="text-color"> <img src="./../images/contactphone.png" height="20px"/>&nbsp; 
-7744006306</a></p><br>
+          <p><a href="tel:7744006306" class="text-color"> <img src="./../images/icons8-phone-50.png" height="20px"/>&nbsp;&nbsp;7744006306</a></p><br>
         </div><br>
         <div class="footer-contact">
-        <p><a href="https://maps.app.goo.gl/vpnFwZfDn5m2Z5aS9" target="_blank" class="text-color"><img src="./../images/contactmap.png" height="20px"/>&nbsp;Pune,Maharashtra, India</a></p><br>
+        <p><a href="https://maps.app.goo.gl/vpnFwZfDn5m2Z5aS9" target="_blank" class="text-color"><img src="./../images/icons8-location-50 (1).png" height="20px"/>&nbsp; &nbsp;Pune,Maharashtra, India</a></p><br>
         </div><br>
       </div>
   </div>

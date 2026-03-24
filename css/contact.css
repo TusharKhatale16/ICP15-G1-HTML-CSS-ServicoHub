@@ -166,7 +166,7 @@ padding: 50px 10px;
 .faq-section {
     padding: 30px 20px;
     text-align: center;
-    background-color: #174ea6;
+    background-color:#eee;
     display: flex;
     justify-content: center;
 }
@@ -189,9 +189,8 @@ h1 {
     margin: 5px 5px 10px 70px;
     border-radius: 15px;
     text-align: left;
-    border: 1px solid black
+    border: 1px solid   #1e4ed6;
     transition: 0.3s ease;
-    background-color: #eee;
 }
 .faq-box:hover {
     transform: translateY(-3px);
